@@ -8,7 +8,23 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+
+    /*
+      Configuração dos aliases para a importação nos componentes.
+      
+      Os aliases definidos aqui são utilizados pela IDE para mapear
+      os arquivos typescript ainda não transpilados.
+
+      Estes aliases precisam ter seus arquivos .js referenciados na index.html
+      através da propriedade de configuração 'map' da library SystemJS.
+    */
+    "baseUrl": ".", // Utilizado pelo atributo paths como caminho relativo
+    "paths": {
+      "classes/*": [ // Nome do alias (glob pattern => 'alias/*')
+        "app/ts/classes/*" // Diretório correspondente ao alias
+      ]
+    }
   },
   "exclude": [
     "node_modules"

@@ -23,7 +23,10 @@
                     format: 'register',
                     defaultExtension: 'js'
                 }
-            }
+            },
+            map: {
+                'classes': './app/js/classes',
+           }
         });
         System.import('app/js/main').then(null, console.error.bind(console));
     </script>
