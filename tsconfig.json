@@ -23,6 +23,9 @@
     "paths": {
       "classes/*": [ // Nome do alias (glob pattern => 'alias/*')
         "app/ts/classes/*" // Diretório correspondente ao alias
+      ],
+      "default/*": [
+        "app/ts/default/*"
       ]
     }
   },

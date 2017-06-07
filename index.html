@@ -26,14 +26,15 @@
             },
             map: {
                 'classes': './app/js/classes',
+                'default': './app/js/default'
            }
         });
-        System.import('app/js/main').then(null, console.error.bind(console));
+        System.import('app/js/main.js').then(null, console.error.bind(console));
     </script>
 </head>
 <body>
 <div class="container-fluid">
-    <my-app>Loading...</my-app>
+    <my-app>Carregando...</my-app>
 </div>
 </body>
 </html>
