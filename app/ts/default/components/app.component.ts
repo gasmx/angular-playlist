@@ -1,6 +1,5 @@
-import {Component} from 'angular2/core'
+import {Component} from '@angular/core'
 import {Config} from 'default/services/config.service'
-// import htmlTemplate from './app.component.html';
 
 @Component({
     selector: 'my-app',
