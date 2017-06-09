@@ -1,0 +1,6 @@
+<div class="container">
+    <h1 class="jumbotron">{{ title }}</h1>
+    <button class="btn btn-primary" (click)="newVideo()">New video</button>
+    <video-list [videos]="videosSrc" (videoSelect)="onSelectVideo($event)"></video-list>
+    <video-detail *ngIf="selectedVideo" [video]="selectedVideo" (closeForm)="onCloseForm($event)"></video-detail>
+</div>

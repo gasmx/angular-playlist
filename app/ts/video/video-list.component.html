@@ -1,0 +1,18 @@
+<h3>Video List Component</h3>
+
+<p>Videos: {{ videos.length }}</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let v of videos; let i = index" (click)="selectVideo(v)">
+            <td>{{ v.id }}</td>
+            <td>{{ v.title }}</td>
+        </tr>
+    </tbody>
+</table>

@@ -27,7 +27,7 @@
       "default/*": [
         "app/ts/default/*"
       ],
-      "config/*": [
+      "modules/*": [
         "app/ts/*"
       ]
     }
