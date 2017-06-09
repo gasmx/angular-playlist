@@ -26,6 +26,9 @@
       ],
       "default/*": [
         "app/ts/default/*"
+      ],
+      "config/*": [
+        "app/ts/*"
       ]
     }
   },

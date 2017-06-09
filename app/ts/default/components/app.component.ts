@@ -1,9 +1,10 @@
 import {Component} from '@angular/core'
 import {Config} from 'default/services/config.service'
+import {dir} from 'config/app.config';
 
 @Component({
     selector: 'my-app',
-    template: '<h1 class="jumbotron">{{ title }}</h1>'
+    templateUrl: dir('/default/templates/app.component.html')
 })
 
 export class AppComponent {
